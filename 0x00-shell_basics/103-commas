@@ -1,2 +1,2 @@
 #!/bin/bash
-ls - xamp
+ls -ap1 | sort -d -k1.1,1.1 -k1.2n -k1.3d | tr '\n' ','; echo
